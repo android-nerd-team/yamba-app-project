@@ -1,12 +1,23 @@
 package com.example.recepinanc.yamba;
 
+import winterwell.jtwitter.Twitter;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 
 public class StatusActivity extends ActionBarActivity {
+
+    private static final String TAG = "StatusActivity";
+
+    EditText status;
+    Button update;
+    Twitter twitter;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
